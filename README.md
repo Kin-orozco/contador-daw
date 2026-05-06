@@ -1,38 +1,24 @@
-# contador_proyecto
+# Proyecto Contador - 1º DAW
 
-This template should help get you started developing with Vue 3 in Vite.
+Este repositorio contiene la solución a la práctica de **Entornos de Desarrollo**. Se trata de un contador reactivo construido con **Vue 3** y **Vite**.
 
-## Recommended IDE Setup
+## 🛠️ Tecnologías utilizadas
+* **Framework:** Vue 3 (Composition API).
+* **Calidad de Código:** ESLint para análisis estático.
+* **Control de Versiones:** Git y GitHub.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📈 Proceso de Desarrollo
+* **Análisis con ESLint**: Se detectaron y eliminaron variables no utilizadas (`nombre`, `mensajeOculto`) para limpiar el código.
+* **Refactorización**: Se renombraron las funciones a `aumentar()` y `disminuir()` para mejorar la semántica.
+* **Lógica de negocio**: El contador tiene límites estrictos entre 0 y 10.
 
-## Recommended Browser Setup
+## 📊 Diagrama de Clases (UML)
+```mermaid
+classDiagram
+    class Contador {
+        +int count
+        +aumentar() void
+        +disminuir() void
+    }
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Actualizada documentación
